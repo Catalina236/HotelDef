@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img/Hotel_piscina.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.logo img{
+    position: absolute;
+    top: -40px;
+    width: 124px;
+    left: 0; /* Ajusta la posición izquierda según sea necesario */
+    z-index: 2;
+}
+nav{
+    margin-top: 0px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    z-index: 1;
+    font-size: 18px;
+    background-color: white;
+}
+.menu-principal{
+    list-style: none;
+    display:flex;
+    justify-content:flex-end;
+    margin-right: 94px;
+}
+.menu-principal >li>a{
+    display: block;
+    padding: 30px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu-principal>li:hover{
+    background-color:deepskyblue;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color:rgba(0, 191, 255, 0.541);
+}
+.menu-principal li:hover .submenu{
+    display: block;
+}
+.submenu li:hover{
+    background-color: deepskyblue;
+}
+.submenu li a{
+    display: block;
+    color: black;
+    text-decoration:none;
+    padding: 15px 15px 15px 20px;
+}
+.titulo1{
+    font-family: 'Nunito', sans-serif;
+    position: relative; 
+    top: 162px;
+    color: white;
+    font-size: 58px;
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
+.introduccion{
+    font-family: 'Nunito',sans-serif;
+    color: white;
+    position: relative;
+    top: 162px;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
+.titulo{
+    position: relative;
+    top: 273px;
+}
+.fecha_reserva{
+    position: absolute;
+    left: 424px;
+    top: 704px;
+}
+.fecha{
+    padding: 8px;
+    border: 2px solid dodgerblue;
+    font-family: 'Nunito',sans-serif;
+    font-size: 15px;
+    border-radius: 7px;
+    outline: none;
+}
+.boton{
+    padding: 7px;
+    background-color: dodgerblue;
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid rgb(0, 78, 156);
+    border-radius: 70px;
+    width: 122px;
+}
+.imagen1{
+    width: 434px;
+    position: relative;
+    left: 115%;
+    bottom: 290px;
+}
+
+#banner{
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+#banner h1{
+    font-family: 'Nunito',sans-serif;
+    position: absolute;
+    top: 790px;
+    font-size: 27px;
+}
+.contenedor-banner{
+    margin: auto;
+    position: relative;
+    top: 850px;
+    height: 570px;
+    overflow: hidden;
+    border: 15px solid white;
+    /*box-shadow: 0 0 10px #000000 0 15px 50px;*/
+    box-shadow: 0 10px 15px 10px #000000 ;
+}
+
+.caja{
+    width: 300%;
+    height: 570px;
+    display:flex;
+}
+
+.section_caja{
+    width: 100%;
+}
+
+.img_caja{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn_atras,
+.btn_siguiente{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 190%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+    margin: 16px;
+}
+
+.btn_atras{
+    left: 10px;
+}
+
+.btn_siguiente{
+    right: 10px;
+}
+.contenedor_imagenes{
+    position: absolute;
+    /*right: 1253px;*/
+    left: 0;
+    top: 50px;
+    margin-bottom:134px;
+}
+.servicios h2{
+    font-family: 'Nunito';
+    margin-bottom: 72px;
+    position: absolute;
+    top: 1690px;
+    left: 480px;
+}
+.tituloservicio h2{
+    font-family: 'Nunito';
+    position: absolute;
+    top: 1770px;
+    left: 205px;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    font-size: 29px;
+}
+.servicio1 img{
+    position: absolute;
+    top: 1681px;
+    left: 125px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 4px 4px 3px rgb(97, 97, 97);
+}
+.servicio1 button{
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 1822px;
+    left: 200px;    
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.servicio1 button a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 15px;
+    transition: transform 0.3 ease;
+}
+.servicio1 button:hover{
+    transform:translateY(-7px);
+}
+.servicio2 img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 1681px;
+    left: 384px;
+    box-shadow: 4px 4px 3px rgb(97, 97, 97);
+}
+.tituloservicio2 h2{
+    font-family: 'Nunito';
+    position: absolute;
+    top: 1770px;
+    left: 485px;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    font-size: 29px;
+}
+.servicio2 button{
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 1822px;
+    left: 460px;    
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.servicio2 button a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 15px;
+    transition: transform 0.3 ease;
+}
+.servicio2 button:hover{
+    transform: translateY(-7px);
+}
+.servicio3 img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 1681px;
+    left: 644px;
+    box-shadow: 4px 4px 3px rgb(97, 97, 97);
+}
+.tituloservicio3 h2{
+    font-family: 'Nunito';
+    position: absolute;
+    top: 1770px;
+    left: 695px;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    font-size: 29px;
+}
+.servicio3 button{
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 1822px;
+    left: 720px;    
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.servicio3 button a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 15px;
+    transition: transform 0.3 ease;
+}
+.servicio3 button:hover{
+    transform: translateY(-7px);
+}
+.servicio4 img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 1681px;
+    left: 905px;
+    box-shadow: 4px 4px 3px rgb(97, 97, 97);
+}
+.tituloservicio4 h2{
+    font-family: 'Nunito';
+    position: absolute;
+    top: 1770px;
+    left: 1000px;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    font-size: 29px;
+}
+.servicio4 button{
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 1822px;
+    left: 980px;    
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3 ease;
+}
+.servicio4 button a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 15px;
+}
+.servicio4 button:hover{
+    transform: translateY(-7px);
+}
+.final{
+    background-image: url('../img/Inicio.jpg');
+    position: relative;
+    top:1400px;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+.final h2{
+    text-align: center;
+    font-family: 'Nunito';
+    text-shadow: 3px 3px 3px rgb(104, 104, 104);
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+footer{
+    position: absolute;
+    bottom: -1550px;
+    width: 100%;
+    left: 0;
+    font-family: 'Nunito';
+    background-color:rgb(240, 240, 240);
+    border-top: 1px solid #d7d7d7;
+}
+footer section{
+    display: table-cell;
+    width: 300px;
+    position: relative;
+}
+footer section a{
+    color: black;
+}
+.informacion{
+    text-align: justify;
+    padding: 15px;
+}
+footer section i{
+    font-size: 33px;
+    /*right: 154px;*/
+    padding-left: 20px;
+    text-align: center;
+}
+.iconos{
+    position: relative;
+    top: 34px;
+    left: 180px;
+}

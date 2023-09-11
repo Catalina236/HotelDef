@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="../Js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <link rel="icon" href="../img/logo verde.png">
+    <link rel="stylesheet" href="../estilos/estiloshotel.css">
+</head>
+<body>
+    <!--contendor para el banner-->
+    <header>
+        <div class="logo"><img src="../img/logo.png" alt=""></div>
+        <nav class="menu">
+            <ul class="menu-principal">
+                <li><a href="#">Reserva</a>
+                <ul class="submenu">
+                    <li><a href="">Crear reserva</a></li>
+                    <li><a href="">Eliminar reserva</a></li>
+                    <li><a href="">Consultar reservas</a></li>
+                </ul>
+                </li>
+                <li><a href="">Habitaciones</a>
+                    <ul class="submenu">
+                        <li><a href="">Doble</a></li>
+                        <li><a href="">Sencilla</a></li>
+                        <li><a href="">Triple</a></li>
+                        <li><a href="">Familiar</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Mi perfil</a>
+                <ul class="submenu">
+                    <li><a href="">Actualizar perfil</a></li>
+                    <li><a href="">Cancelar cuenta</a></li>
+                    <li><a href="">Recuperar contraseña</a></li>
+                </ul>
+            </li>
+                <li><a href="">Contáctenos</a></li>
+                <li><a href="../Hotel/Servicios.html">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#">Piscina</a></li>
+                        <li><a href="Servicios.html">Restaurante</a></li>
+                        <li><a href="">Gimnasio</a></li>
+                        <li><a href="">Bar</a></li>
+                        <li><a href="">Zonas húmedas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="titulo">
+        <h1 class="titulo1">Hotel SENA</h1>
+        <h2 class="introduccion">Tus vacaciones perfectas en nuestro Hotel</h2>
+    </div>
+
+    <div class="fecha_reserva">
+        <input type="date" name="" class="fecha">
+        <input type="date" name="" class="fecha">
+        <input type="submit" value="Verificar" class="boton">
+    </div>
+
+    <div id="banner">
+        <h1>DISFRUTE DE SU ESTADÍA EN NUESTRAS CÓMODAS HABITACIONES</h1>
+            <!--contendor del banner-->
+        <div id="contenedor-banner" class="contenedor-banner">
+            <div id="caja" class="caja">
+                <section class="section_caja"><img src="../img/Hotel.jpg" class="img_caja"></section>
+                <section class="section_caja"><img src="../img/habitacion.jpg" class="img_caja"></section>
+                <section class="section_caja"><img src="../img/Habitación.jpg" class="img_caja"></section>
+             </div>
+        </div>
+        <!--contenedor para las imagenes del contenido-->
+        <div id="btn_atras" class="btn_atras">&#60;</div>
+        <!--boton desplazamiento a la derecha-->
+        <div id="btn_siguiente" class="btn_siguiente">&#62;</div>
+    </div>
+    <!--Llamado del comportamiento del banner-->
+    <script src="../Js/baner.js"></script>
+
+    <section class="servicios">
+        <h2>NUESTROS SERVICIOS</h2>
+        <div class="contenedor_imagenes">
+            <div class="servicio1">
+                <img src="../img/images.jpg" alt="">
+                <div class="tituloservicio">
+                    <h2>Piscina</h2>
+                </div>
+                <button><a href="piscina.html">Ver más</a></button>
+            </div>
+            <div class="servicio2">
+                <img src="../img/Bar2.jpg" alt="">
+                <div class="tituloservicio2"><h2>Bar</h2></div>
+                <button><a href="">Ver más</a></button>
+            </div>
+            <div class="servicio3">
+                <img src="../img/restaurante.jpg" alt="">
+                <div class="tituloservicio3"><h2>Restaurante</h2></div>
+                <button><a href="">Ver más</a></button>
+            </div>
+            <div class="servicio4">
+                <img src="../img/spa2.jpg" alt="">
+                <div class="tituloservicio4"><h2>Spa</h2></div>
+                <button><a href="">Ver más</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="final">
+        <div class="contenido">
+            <h2>El lugar perfecto para perderse y desconectar</h2>
+        </div>
+    </section>
+    <footer class="piepag">
+    <section class="informacion">
+        <h2>Hotelerismo SENA</h2>
+        <p>Calle 30</p>
+        <a href=""><p>32569785211</p></a>
+        <a href=""><p>hotelerismosena76@sena.edu.co</p></a>
+    </section>        
+    <section class="iconos">
+        <a href="https://web.facebook.com/sena.soacha/?locale=es_LA&_rdc=1&_rdr"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsenasoachacide"><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </section>
+    </footer>
+</body>
+</html>
